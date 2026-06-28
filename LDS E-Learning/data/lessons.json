@@ -1,0 +1,72 @@
+[
+  {
+    "id": "l_html_1",
+    "courseId": "c_html",
+    "title": "Welcome to Web Structure & HTML Fundamentals",
+    "description": "Understand what HTML is, the role of browsers, how requests work, and creating your very first .html document.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "pdfUrl": "assets/html_intro_cheatsheet.pdf",
+    "duration": 10,
+    "order": 1
+  },
+  {
+    "id": "l_html_2",
+    "courseId": "c_html",
+    "title": "Working with Semantic Tags & Content Blocks",
+    "description": "Dive deep into header, nav, main, article, section, footer tags, and understand why page semantic structure matters for SEO and accessibility.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "pdfUrl": "assets/html_semantics_guide.pdf",
+    "duration": 15,
+    "order": 2
+  },
+  {
+    "id": "l_css_1",
+    "courseId": "c_css",
+    "title": "CSS selectors, Specificity, and the Box Model",
+    "description": "Get to grips with selectors, margins, paddings, borders, outlines, block-level vs inline layout modes, and design specificity.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "pdfUrl": "assets/css_boxmodel_reference.pdf",
+    "duration": 12,
+    "order": 1
+  },
+  {
+    "id": "l_css_2",
+    "courseId": "c_css",
+    "title": "Creating Glassmorphic Cards & Grid Layouts",
+    "description": "Learn to write advanced visual rules. Create dynamic grids, handle responsiveness, implement backdrop blur effects, and add subtle animations.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "pdfUrl": "assets/css_glassmorphic_grid.pdf",
+    "duration": 18,
+    "order": 2
+  },
+  {
+    "id": "l_js_1",
+    "courseId": "c_js",
+    "title": "Variables, Scope, and Data Structures in JS",
+    "description": "Introduction to let, const, block scope, arrays, objects, maps, loops, and basic logic controls.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "pdfUrl": "assets/js_variables_cheatsheet.pdf",
+    "duration": 15,
+    "order": 1
+  },
+  {
+    "id": "l_js_2",
+    "courseId": "c_js",
+    "title": "DOM Interactions & Persistent LocalStorage",
+    "description": "Learn how JavaScript binds with the UI. Query selectors, event listeners, updating DOM state, and storing user preferences in the browser database.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "pdfUrl": "assets/js_localstorage_guide.pdf",
+    "duration": 22,
+    "order": 2
+  },
+  {
+    "id": "l_ai_1",
+    "courseId": "c_ai_basics",
+    "title": "Neural Networks, LLMs and Prompt Engineering Essentials",
+    "description": "Introduction to AI history, artificial neural networks, transformers, and the syntax of writing effective prompts (role, context, constraints).",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+    "pdfUrl": "assets/ai_prompt_engineering_blueprint.pdf",
+    "duration": 14,
+    "order": 1
+  }
+]

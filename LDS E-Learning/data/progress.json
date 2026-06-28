@@ -1,0 +1,26 @@
+[
+  {
+    "id": "progress_u_student_c_html",
+    "userId": "u_student",
+    "courseId": "c_html",
+    "completedLessons": ["l_html_1"],
+    "completedQuizzes": [],
+    "bookmarks": [
+      {
+        "lessonId": "l_html_1",
+        "timestamp": 125,
+        "noteText": "Bookmark here for introduction to anchor tags."
+      }
+    ],
+    "notes": [
+      {
+        "lessonId": "l_html_1",
+        "text": "HTML5 introduces tags like <main>, <article>, and <section> to structure pages cleanly.",
+        "date": "2026-06-25T14:20:00.000Z"
+      }
+    ],
+    "pointsEarned": 20,
+    "completed": false,
+    "completedAt": null
+  }
+]

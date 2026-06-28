@@ -1,0 +1,126 @@
+[
+  {
+    "id": "q_html",
+    "courseId": "c_html",
+    "title": "HTML5 & Web Structure Mastery Quiz",
+    "duration": 5,
+    "questions": [
+      {
+        "id": "q_html_1",
+        "question": "Which HTML5 element represents the main content of the document body?",
+        "options": ["<content>", "<section>", "<main>", "<article>"],
+        "answerIndex": 2,
+        "points": 10
+      },
+      {
+        "id": "q_html_2",
+        "question": "What is the correct tag for creating an anchor link?",
+        "options": ["<link>", "<a>", "<href>", "<anchor>"],
+        "answerIndex": 1,
+        "points": 10
+      },
+      {
+        "id": "q_html_3",
+        "question": "Which attribute specifies an alternate text for an image if the image cannot be displayed?",
+        "options": ["title", "src", "alt", "desc"],
+        "answerIndex": 2,
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "q_css",
+    "courseId": "c_css",
+    "title": "CSS3 Styling & Grid Layouts Quiz",
+    "duration": 7,
+    "questions": [
+      {
+        "id": "q_css_1",
+        "question": "In the CSS Box Model, which property sits directly between padding and margin?",
+        "options": ["outline", "border", "content", "background"],
+        "answerIndex": 1,
+        "points": 10
+      },
+      {
+        "id": "q_css_2",
+        "question": "Which value of backdrop-filter is used to create a glassmorphism blur?",
+        "options": ["blur()", "transparent()", "opacity()", "saturate()"],
+        "answerIndex": 0,
+        "points": 10
+      },
+      {
+        "id": "q_css_3",
+        "question": "Which selector has the highest specificity?",
+        "options": ["Class selector (.nav)", "ID selector (#header)", "Element selector (div)", "Inline style attribute"],
+        "answerIndex": 3,
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "q_js",
+    "courseId": "c_js",
+    "title": "Modern JavaScript Fundamentals Quiz",
+    "duration": 10,
+    "questions": [
+      {
+        "id": "q_js_1",
+        "question": "Which keyword defines a block-scoped variable that cannot be reassigned?",
+        "options": ["var", "let", "const", "static"],
+        "answerIndex": 2,
+        "points": 10
+      },
+      {
+        "id": "q_js_2",
+        "question": "How do you store an object in LocalStorage as a string?",
+        "options": [
+          "JSON.stringify(object)",
+          "JSON.parse(object)",
+          "object.toString()",
+          "LocalStorage.set(object)"
+        ],
+        "answerIndex": 0,
+        "points": 10
+      },
+      {
+        "id": "q_js_3",
+        "question": "Which array method returns a new array with all elements that pass a test?",
+        "options": ["map()", "forEach()", "filter()", "reduce()"],
+        "answerIndex": 2,
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "q_ai_basics",
+    "courseId": "c_ai_basics",
+    "title": "AI & Prompt Engineering Basics Quiz",
+    "duration": 5,
+    "questions": [
+      {
+        "id": "q_ai_1",
+        "question": "What is the primary role of 'Prompt Engineering'?",
+        "options": [
+          "Writing code to train neural network architectures",
+          "Crafting inputs to guide LLMs toward accurate outputs",
+          "Designing user interfaces for AI chat applications",
+          "Calculating graphics acceleration workloads"
+        ],
+        "answerIndex": 1,
+        "points": 10
+      },
+      {
+        "id": "q_ai_2",
+        "question": "What does LLM stand for?",
+        "options": [
+          "Linear Learning Machine",
+          "Link Layer Manager",
+          "Large Language Model",
+          "Logic Learning Module"
+        ],
+        "answerIndex": 2,
+        "points": 10
+      }
+    ]
+  }
+]

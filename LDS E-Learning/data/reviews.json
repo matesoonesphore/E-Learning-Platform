@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rev_1",
+    "courseId": "c_html",
+    "userId": "u_student",
+    "userName": "Alex Mercer",
+    "rating": 5,
+    "comment": "Perfect course for absolute beginners! The explanations of semantic layout tags are crystal clear.",
+    "date": "2026-06-25T15:30:00.000Z"
+  },
+  {
+    "id": "rev_2",
+    "courseId": "c_html",
+    "userId": "u_student_2",
+    "userName": "Jane Doe",
+    "rating": 4,
+    "comment": "Very good, well-paced structure. Looking forward to the CSS sequel!",
+    "date": "2026-06-20T11:00:00.000Z"
+  },
+  {
+    "id": "rev_3",
+    "courseId": "c_css",
+    "userId": "u_student_2",
+    "userName": "Jane Doe",
+    "rating": 5,
+    "comment": "Loved the glassmorphism section. The responsive layouts tutorial is the best I've seen.",
+    "date": "2026-06-22T09:15:00.000Z"
+  }
+]

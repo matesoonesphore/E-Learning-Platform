@@ -1,0 +1,122 @@
+
+7
+4   <!DOCTYPE html>
+<html lang="en" data-theme="dark" data-contrast="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LDS E-Learning Platform - Learn Web Development, Artificial Intelligence, and Design with dynamic gamification, Timed assessments, and AI helpers.">
+  <title>LDS E-Learning Platform | Next-Gen E-Learning</title>
+  
+  <!-- Core Design Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Dynamic Header injected by js/app.js -->
+    <header class="global-header"></header>
+
+    <main class="container">
+      
+      <!-- Hero Header -->
+      <section class="hero" id="hero-section">
+        <div class="hero-tag">🌟 <span data-i18n="welcome_message">Unlock Your Coding Potential</span></div>
+        <h1 id="hero-heading">LDS E-Learning Platform</h1>
+        <p data-i18n="hero_desc">LDS E-Learning Platform provides state-of-the-art interactive modules, timed assessments, and AI tutoring to supercharge your tech capabilities.</p>
+        <div class="hero-actions">
+          <a href="courses.html" class="btn btn-primary" id="btn-hero-explore" data-i18n="cta_explore">Explore Courses</a>
+          <a href="register.html" class="btn btn-secondary" id="btn-hero-register" data-i18n="cta_join">Join Platform</a>
+        </div>
+      </section>
+
+      <!-- Grid Highlights -->
+      <section class="grid-3" style="margin: 4rem 0;">
+        <div class="card" id="feat-interactive">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎥</div>
+          <h3>Interactive Classroom</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Study with customizable video playback speeds, captions, time bookmarks, and live note taking.</p>
+        </div>
+        <div class="card" id="feat-timed">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">⏱️</div>
+          <h3>Timed Assessments</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Verify your retention rates with timed quizzes, instant grading, and automated points.</p>
+        </div>
+        <div class="card" id="feat-badges">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏆</div>
+          <h3>Gamified Rewards</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Earn collectible badges and climb the global ranks by checking in daily and passing quizzes.</p>
+        </div>
+      </section>
+
+      <!-- Pathway Map Section -->
+      <section class="paths-section" id="pathways-showcase">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h2>🛣️ Recommended Learning Paths</h2>
+          <p style="color: var(--text-muted);">Sequential tracks engineered to take you from absolute novice to job-ready developer.</p>
+        </div>
+        <div id="paths-container">
+          <!-- Dynamically populated by js/courses.js -->
+        </div>
+      </section>
+
+      <!-- Social Proof / Leaderboard & Badges preview -->
+      <section class="grid-2" style="margin-bottom: 4rem;">
+        <div class="card" id="leaderboard-preview-card">
+          <h3 data-i18n="leaderboard">Top Learners Leaderboard</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Friendly peer competition. Top profiles across the globe.</p>
+          <div class="leaderboard-list" id="home-leaderboard">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="card" id="gamify-achievements-card">
+          <h3>🏆 Collectible Badges</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Unlock digital badges by solving tasks and completing courses.</p>
+          <div class="badge-grid">
+            <div class="badge-item">
+              <div class="badge-icon">🌟</div>
+              <div class="badge-name">Beginner Learner</div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🎓</div>
+              <div class="badge-name">Quiz Master</div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🏆</div>
+              <div class="badge-name">Course Champion</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Global Footer injected by js/app.js -->
+    <footer class="global-footer"></footer>
+  </div>
+
+  <!-- Application Logic Modules -->
+  <script src="js/app.js"></script>
+  <script src="js/courses.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Initialize paths rendering
+      Courses.renderLearningPaths();
+
+      // Render home page leaderboard
+      const users = (window.DB.get("users") || []).sort((a,b) => (b.points || 0) - (a.points || 0));
+      const homeLeaderboard = document.getElementById("home-leaderboard");
+      if (homeLeaderboard) {
+        homeLeaderboard.innerHTML = users.slice(0, 3).map((u, i) => `
+          <div class="leaderboard-row">
+            <span class="leaderboard-rank">#${i+1}</span>
+            <span class="leaderboard-name">${u.name}</span>
+            <span class="leaderboard-points">${u.points || 0} pts</span>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

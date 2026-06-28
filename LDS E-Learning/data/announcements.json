@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ann_1",
+    "courseId": "c_html",
+    "title": "HTML5 Canvas Cheat Sheet Added!",
+    "content": "Hi everyone! I have uploaded a bonus HTML5 Canvas reference guide in the course materials. Make sure to check it out in Lesson 2 resources.",
+    "date": "2026-06-26T08:00:00.000Z"
+  },
+  {
+    "id": "ann_2",
+    "courseId": "c_css",
+    "title": "Welcome to CSS3 Styling!",
+    "content": "Welcome to the class. Please make sure to download the box-model cheatsheet before watching the first video, it will make layouts much easier to comprehend.",
+    "date": "2026-06-25T09:00:00.000Z"
+  }
+]

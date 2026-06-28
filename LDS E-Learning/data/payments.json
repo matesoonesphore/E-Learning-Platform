@@ -1,0 +1,10 @@
+[
+  {
+    "id": "pay_1",
+    "userId": "u_student",
+    "courseId": "c_html",
+    "amount": 19.99,
+    "couponCode": "WELCOME20",
+    "date": "2026-06-25T10:15:30.000Z"
+  }
+]
